@@ -13,7 +13,7 @@ global $sitepress;
 
 $wpai_wpml = new RapidAddon('WP All Import Multi Lang', 'wpai_wpml');
 
-foreach($sitepress->get_languages() as $language){
+foreach($sitepress->get_active_languages() as $language){
     $wpai_wpml->add_field('wpaiml_'.$language['code'], 'Code for ' . $language['display_name'], 'text');
 }
 
