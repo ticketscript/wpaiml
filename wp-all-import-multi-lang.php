@@ -7,14 +7,12 @@ Author: Niels Harland @ ticketscript b.v.
 */
 
 
-include "rapid-addon.php";
+include "vendor/autoload.php";
+
 if(!function_exists('wp_get_current_user')) {
     include(ABSPATH . "wp-includes/pluggable.php");
 }
 
-if(!function_exists('array_column')) {
-    include("array_column.php");
-}
 $GLOBALS[ 'wp_log_plugins' ][] = 'wpaiml';
 
 $wpaiml = new RapidAddon('WP All Import Multi Lang', 'wpaiml');

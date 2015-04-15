@@ -1,0 +1,40 @@
+{
+  "name": "ticketscript/wpaiml",
+  "description": "Add-on to migrate existing multi-language content to WPML via WP All Import",
+  "type": "plugin",
+  "keywords": ["wpml","wordpress","import", "i18n"],
+  "homepage": "https://github.com/ticketscript/wpaiml",
+  "license": "gpl2",
+  "authors": [
+    {
+      "name": "Niels Harland",
+      "homepage": "http://niels.harland.io"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/ticketscript/wpaiml/issues",
+    "source": "https://github.com/ticketscript/wpaiml"
+  },
+  "repositories":[
+    {
+      "type":"composer",
+      "url":"http://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "soflyy/wp-all-import-rapid-addon",
+        "version": "1.0",
+        "source": {
+          "url": "https://github.com/soflyy/wp-all-import-rapid-addon.git",
+          "type": "git",
+          "reference":"master"
+        }
+      }
+    }
+  ],
+  "require": {
+    "ramsey/array_column": "~1.1",
+    "soflyy/wp-all-import-rapid-addon": "1.0"
+  }
+}
